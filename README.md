@@ -1,6 +1,14 @@
-# Website
+# Cracker Documents
+Crackerの開発者向けドキュメントのリポジトリです。  
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+このドキュメントは[Docusaurus](https://docusaurus.io/)により作成され、GitHub Pagesにデプロイされています。  
+
+ドキュメントを読む場合は以下にアクセスしてください。  
+
+https://cracker-system.github.io/docs/
+
+### デプロイ
+GitHub Actionsにより、mainブランチにpushされると自動的にGitHub Pagesにデプロイされます。
 
 ### Installation
 
