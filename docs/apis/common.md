@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # API共通仕様
+APIの共通仕様
 ## プロトコル
 HTTPS
 ## メディアタイプ
