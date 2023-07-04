@@ -51,6 +51,7 @@ APIの使用で正常に動作が行われない場合、以下のエラー応�
 |POST|/guests|新規ゲストの登録をします|
 |PUT|/guests|既存ゲストの情報を更新します|
 |DELETE|/guests|既存ゲストの削除をします|
+|GET|/guests|既存ゲストの削除をします|
 |GET|/exhibits|展示IDの一覧を取得します|
 |POST|/exhibits|新規展示の登録をします|
 |PUT|/exhibits|既存展示の情報を更新します|
