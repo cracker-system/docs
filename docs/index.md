@@ -1,8 +1,5 @@
 ---
-sidebar_position: 1,
-"link": {
-  "type": "generated-index"
-}
+sidebar_position: 1
 ---
 
 # Introduction
