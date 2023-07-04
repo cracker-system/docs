@@ -22,7 +22,6 @@ REST APIをリクエストする場合、以下のリクエストヘッダーが
 |Header Name|Description|
 |----|----|
 |Auth-Api-Token|APIトークン|
-|message|エラーメッセージ|
 
 ### エラーレスポンス
 APIの使用で正常に動作が行われない場合、以下のエラー応答情報を返却します。
