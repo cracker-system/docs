@@ -21,7 +21,7 @@ sidebar_position: 2
 |guest_id|VARCHAR(128)|primary key, uuid|
 |guests|longtext|[["続柄","氏名"]]|
 |student_info|longtext|["生徒氏名","生徒所属","生徒学年","生徒クラス"]|
-|state|VARCHAR(20)|not_entered/entered/deleted|
+|state|VARCHAR(20)|not_entered/entered/disable|
 |mail|VARCHAR(400)||
 
 stateについて
