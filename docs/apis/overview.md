@@ -19,14 +19,14 @@ HTTPヘッダーの「Auth-Api-Token」に生成されたAPIトークンを設�
 ### リクエストヘッダー
 REST APIをリクエストする場合、以下のリクエストヘッダーが共通で必要です。
 
-|Header Name|Description|
+|ヘッダー名|説明|
 |----|----|
 |Auth-Api-Token|APIトークン|
 
 ### エラーレスポンス
 APIの使用で正常に動作が行われない場合、以下のエラー応答情報を返却します。
 
-|Property name|Type|Description|
+|プロパティ名|タイプ|説明|
 |----|----|----|
 |code|文字列|エラーコード|
 |message|文字列|エラーメッセージ|
@@ -41,7 +41,7 @@ APIの使用で正常に動作が行われない場合、以下のエラー応�
 ## リソース一覧
 提供するREST APIの一覧
 
-|Method|Endpoint|Description|
+|メソッド|エンドポイント|説明|
 |----|----|----|
 |GET|/users|ユーザーIDの一覧を取得します|
 |POST|/users|新規ユーザーの登録をします|
