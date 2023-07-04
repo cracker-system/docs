@@ -41,23 +41,23 @@ APIの使用で正常に動作が行われない場合、以下のエラー応�
 ## リソース一覧
 提供するREST APIの一覧
 
-|メソッド|エンドポイント|説明|
-|----|----|----|
-|GET|/users|ユーザーIDの一覧を取得します|
-|POST|/users|新規ユーザーの登録をします|
-|PUT|/users|既存ユーザーの情報を更新します|
-|DELETE|/users|既存ユーザーの削除をします|
-|GET|/guests|ゲストIDの一覧を取得します|
-|POST|/guests|新規ゲストの登録をします|
-|PUT|/guests|既存ゲストの情報を更新します|
-|DELETE|/guests|既存ゲストの削除をします|
-|GET|/guests|既存ゲストの削除をします|
-|GET|/exhibits|展示IDの一覧を取得します|
-|POST|/exhibits|新規展示の登録をします|
-|PUT|/exhibits|既存展示の情報を更新します|
-|DELETE|/exhibits|既存展示の削除をします|
-|GET|/activities|アクティビティIDの一覧を取得します|
-|POST|/activities|新規アクティビティの登録をします|
-|GET|/invitations|招待コードの一覧を取得します|
-|POST|/invitations|新規招待コードを登録します|
-|DELETE|/invitations|既存招待コードを削除します|
+|API名|メソッド|エンドポイント|説明|
+|----|----|----|----|
+|ユーザー取得|GET|/users|ユーザー情報を取得します|
+|ユーザー登録|POST|/users|新規ユーザーの登録をします|
+|ユーザー更新|PUT|/users|既存ユーザー情報を更新します|
+|ユーザー削除|DELETE|/users|既存ユーザーの削除をします|
+|ゲスト取得|GET|/guests|ゲスト情報を取得します|
+|ゲスト登録|POST|/guests|新規ゲストの登録をします|
+|ゲスト更新|PUT|/guests|既存ゲスト情報を更新します|
+|ゲスト削除|DELETE|/guests|既存ゲストの削除をします|
+|ゲスト検索|GET|/guests|ゲスト情報を検索します|
+|展示取得|GET|/exhibits|展示情報を取得します|
+|展示登録|POST|/exhibits|新規展示の登録をします|
+|展示更新|PUT|/exhibits|既存展示情報を更新します|
+|展示削除|DELETE|/exhibits|既存展示の削除をします|
+|アクティビティ取得|GET|/activities|アクティビティ情報を取得します|
+|アクティビティ登録|POST|/activities|新規アクティビティの登録をします|
+|招待コード取得|GET|/invitations|招待コード情報を取得します|
+|招待コード登録|POST|/invitations|新規招待コードを登録します|
+|招待コード削除|DELETE|/invitations|既存招待コードを削除します|
