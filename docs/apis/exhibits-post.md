@@ -6,7 +6,7 @@ sidebar_position: 12
 新規展示の登録を行います。
 
 ## 基本仕様
-- エンドポイント : /users/{exhibit_id}
+- エンドポイント : /exhibits/{exhibit_id}
 - メソッド : POST
 
 ## リクエストヘッダー
