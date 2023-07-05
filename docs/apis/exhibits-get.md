@@ -6,7 +6,7 @@ sidebar_position: 11
 展示情報の取得を行います。
 
 ## 基本仕様
-- エンドポイント : /users/{exhibit_id}
+- エンドポイント : /exhibits/{exhibit_id}
 - メソッド : GET
 
 なおエンドポイントの{exhibit_id}は省略可能です。省略した場合展示一覧が取得できます。
