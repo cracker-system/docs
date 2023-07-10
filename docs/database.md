@@ -10,7 +10,6 @@ sidebar_position: 2
 |----|----|----|
 |user_id|VARCHAR(20)|primary key|
 |name|VARCHAR(40)|ユーザー名|
-|roles|longtext|["role1","role2"]|
 |exhibit_id|VARCHAR(20)|所属展示ID|
 |password|VARCHAR(256)|「セキュリティ/パスワード保管」に基づく|
 
@@ -20,7 +19,10 @@ sidebar_position: 2
 |----|----|----|
 |guest_id|VARCHAR(128)|primary key, uuid|
 |guests|longtext|[["続柄","氏名"]]|
-|student_info|longtext|["生徒氏名","生徒所属","生徒学年","生徒クラス"]|
+|st_name|VARCHAR(400)|生徒氏名|
+|st_belong|VARCHAR(400)|生徒所属|
+|st_grade|VARCHAR(400)|生徒学年|
+|st_class|VARCHAR(400)|生徒クラス|
 |state|VARCHAR(20)|not_entered/entered/disable|
 |mail|VARCHAR(400)||
 
@@ -54,3 +56,17 @@ activity_typeについて
 |----|----|----|
 |exhibit_id|VARCHAR(20)|primary key|
 |exhibit_name|VARCHAR(60)|展示名|
+
+- roles
+
+|key|type|description|
+|----|----|----|
+|role_id|VARCHAR(128)|primary key, uuid|
+|role_name|VARCHAR(60)|ロール名|
+
+- usersrole
+
+|key|type|description|
+|----|----|----|
+|user_id|VARCHAR(20)||
+|role_id|VARCHAR(128)||
