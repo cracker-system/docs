@@ -57,7 +57,7 @@ activity_typeについて
 |exhibit_id|VARCHAR(20)|primary key|
 |exhibit_name|VARCHAR(60)|展示名|
 
-- roles
+- role
 
 |key|type|description|
 |----|----|----|
