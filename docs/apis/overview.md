@@ -65,4 +65,6 @@ REST APIを使用する際の各種パラメータやリクエストボディで
 |招待コード取得|GET|/invitations|招待コード情報を取得します|
 |招待コード登録|POST|/invitations|新規招待コードを登録します|
 |招待コード削除|DELETE|/invitations|既存招待コードを削除します|
+|ロール取得|GET|/roles|ロール情報を取得します|
+|ユーザー所持ロール取得|GET|/usersroles|ユーザーの所持しているロールを取得します|
 |QRコード生成|GET|/qr|Cracker用QRコードを生成します|
