@@ -31,9 +31,9 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|説明|
 |----|----|----|
 |invitation_code|文字列|招待コード|
-|usage_count|文字列|使用回数|
-|count_limit|配列|残登録可能数|
-|time_limit|文字列|登録可能制限時間 ``yyyy-MM-dd HH:mm:ss``|
+|usage_count|数値|使用回数|
+|count_limit|数値|残登録可能数|
+|time_limit|タイムスタンプ|登録可能制限時間 ``yyyy-MM-dd HH:mm:ss``|
 |creater|文字列|コード作成ユーザーID|
 
 レスポンスボディサンプル
