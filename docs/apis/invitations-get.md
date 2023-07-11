@@ -34,7 +34,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |usage_count|文字列|使用回数|
 |count_limit|配列|残登録可能数|
 |time_limit|文字列|登録可能制限時間 ``yyyy-MM-dd HH:mm:ss``|
-|creater|文字列|コード作成ユーザー|
+|creater|文字列|コード作成ユーザーID|
 
 レスポンスボディサンプル
 ```
