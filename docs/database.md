@@ -57,6 +57,16 @@ activity_typeについて
 |exhibit_id|VARCHAR(20)|primary key|
 |exhibit_name|VARCHAR(60)|展示名|
 
+- invitation
+
+|key|type|description|
+|----|----|----|
+|invitation_code|VARCHAR(8)|primary key|
+|usage_count|INT(4)|使用回数|
+|count_limit|INT(4)|残登録可能数|
+|time_limit|timestamp|登録可能制限時間|
+|creater|VARCHAR(20)|コード制作ユーザーID|
+
 - role
 
 |key|type|description|
