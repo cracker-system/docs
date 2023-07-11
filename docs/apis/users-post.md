@@ -32,7 +32,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 リクエストボディサンプル
 ```
 {
-    "name": "3-1 縁日",
+    "user_name": "3-1 縁日",
     "exhibit_id": "31",
     "password": "9a584b1ab14c784933959ecffa8c3925de5426132554c8ae0f55184c428da0b9"
 }
@@ -49,8 +49,8 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 レスポンスボディサンプル
 ```
 {
-    "id": "31ennichi",
-    "name": "3-1 縁日",
+    "user_id": "31ennichi",
+    "user_name": "3-1 縁日",
     "exhibit_id": "31"
 }
 ```
