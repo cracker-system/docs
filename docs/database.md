@@ -9,7 +9,7 @@ sidebar_position: 2
 |key|type|description|
 |----|----|----|
 |user_id|VARCHAR(20)|primary key|
-|name|VARCHAR(40)|ユーザー名|
+|user_name|VARCHAR(40)|ユーザー名|
 |exhibit_id|VARCHAR(20)|所属展示ID|
 |password|VARCHAR(256)|「セキュリティ/パスワード保管」に基づく|
 
@@ -63,6 +63,12 @@ activity_typeについて
 |----|----|----|
 |role_id|VARCHAR(128)|primary key, uuid|
 |role_name|VARCHAR(60)|ロール名|
+|authority|VARCHAR(60)|ex)``A000000000000000000000000000000``|
+
+authorityについて  
+`A`で始める。  
+各桁に権限の有無を記す。  
+`0`は権限なし、`1`は権限あり
 
 - usersrole
 
