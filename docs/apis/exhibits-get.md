@@ -31,12 +31,12 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|説明|
 |----|----|----|
 |exhibit_id|文字列|ユーザーID|
-|name|文字列|展示名|
+|exhibit_name|文字列|展示名|
 
 レスポンスボディサンプル
 ```
 {
     "exhibit_id": "31ennichi",
-    "name": "3-1 縁日"
+    "exhibit_name": "3-1 縁日"
 }
 ```
