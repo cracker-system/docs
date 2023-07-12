@@ -6,7 +6,7 @@ sidebar_position: 19
 既存招待コードの削除を行います。
 
 ## 基本仕様
-- エンドポイント : /invitations/{invitation_code}
+- エンドポイント : /user-invitations/{invitation_code}
 - メソッド : DELETE
 
 ## リクエストヘッダー
