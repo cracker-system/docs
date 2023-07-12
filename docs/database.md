@@ -65,7 +65,7 @@ activity_typeについて
 |usage_count|INT(4)|使用回数|
 |count_limit|INT(4)|残登録可能数|
 |time_limit|timestamp|登録可能制限時間|
-|creater|VARCHAR(20)|コード制作ユーザーID|
+|creator|VARCHAR(20)|コード制作ユーザーID|
 
 ## role
 
