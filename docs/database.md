@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # データベース構成と規則
 データベースの構成と内部データの規則
-- user  
+## user  
 
 |key|type|description|
 |----|----|----|
@@ -13,7 +13,7 @@ sidebar_position: 2
 |exhibit_id|VARCHAR(20)|所属展示ID|
 |password|VARCHAR(256)|「セキュリティ/パスワード保管」に基づく|
 
-- guest
+## guest
 
 |key|type|description|
 |----|----|----|
@@ -35,7 +35,7 @@ not_entered/enteredの切り替えは文化祭入場口で処理した場合の�
 各展示会場での処理では変更しません。  
 disableとなったゲストは入場が許可されません。
 
-- activity
+## activity
 
 |key|type|description|
 |----|----|----|
@@ -50,14 +50,14 @@ activity_typeについて
 - enter : 入場処理が行われた際のタイプ
 - exit : 退場処理が行われた際のタイプ
 
-- exhibit
+## exhibit
  
 |key|type|description|
 |----|----|----|
 |exhibit_id|VARCHAR(20)|primary key|
 |exhibit_name|VARCHAR(60)|展示名|
 
-- invitation
+## invitation
 
 |key|type|description|
 |----|----|----|
@@ -67,7 +67,7 @@ activity_typeについて
 |time_limit|timestamp|登録可能制限時間|
 |creater|VARCHAR(20)|コード制作ユーザーID|
 
-- role
+## role
 
 |key|type|description|
 |----|----|----|
@@ -80,7 +80,7 @@ authorityについて
 各桁に権限の有無を記す。  
 `0`は権限なし、`1`は権限あり
 
-- usersrole
+## usersrole
 
 |key|type|description|
 |----|----|----|
