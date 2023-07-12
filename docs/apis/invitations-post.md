@@ -23,13 +23,13 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|必須|説明|
 |----|----|----|----|
 |count_limit|数値|必須|残登録可能数|
-|creater|文字列|必須|コード作成ユーザーID|
+|creator|文字列|必須|コード作成ユーザーID|
 
 リクエストボディサンプル
 ```
 {
     "count_limit": 20,
-    "creater": "admin"
+    "creator": "admin"
 }
 ```
 
@@ -41,7 +41,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |usage_count|数値|使用回数|
 |count_limit|数値|残登録可能数|
 |time_limit|タイムスタンプ|登録可能制限時間 ``yyyy-MM-dd HH:mm:ss``|
-|creater|文字列|コード作成ユーザーID|
+|creator|文字列|コード作成ユーザーID|
 
 レスポンスボディサンプル
 ```
@@ -50,6 +50,6 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
     "usage_count": 3,
     "count_limit": 17,
     "time_limit": "2023-07-09 15:30:42",
-    "creater": "admin"
+    "creator": "admin"
 }
 ```
