@@ -6,7 +6,7 @@ sidebar_position: 18
 新規ユーザーの登録を行います。
 
 ## 基本仕様
-- エンドポイント : /invitations
+- エンドポイント : /user-invitations
 - メソッド : POST
 
 ## リクエストヘッダー
