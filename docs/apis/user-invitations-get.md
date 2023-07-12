@@ -6,7 +6,7 @@ sidebar_position: 17
 招待コード情報の取得を行います。
 
 ## 基本仕様
-- エンドポイント : /invitations/{invitation_code}
+- エンドポイント : /user-invitations/{invitation_code}
 - メソッド : GET
 
 なおエンドポイントの{invitation_code}は省略可能です。省略した場合招待コード一覧が取得できます。
