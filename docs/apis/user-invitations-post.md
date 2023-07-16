@@ -47,8 +47,8 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 ```
 {
     "invitation_code": "EhaO8C5X",
-    "usage_count": 3,
-    "count_limit": 17,
+    "usage_count": 0,
+    "count_limit": 20,
     "time_limit": "2023-07-09 15:30:42",
     "creator": "admin"
 }
