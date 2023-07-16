@@ -29,13 +29,15 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 
 |パラメータ名|タイプ|説明|
 |----|----|----|
+|user_id|文字列|ユーザーID|
 |role_id|文字列|ロールID|
-|role_name|文字列|ロール名|
 
 レスポンスボディサンプル
 ```
 [
-    ["role_id1","role_name1"],
-    ["role_id2","role_name2"]
+  {
+    "user_id": "admin",
+    "role_id": "bdae310f-2eee-4f01-97ec-6ffb6779e7aa"
+  }
 ]
 ```
