@@ -18,11 +18,11 @@ sidebar_position: 2
 |key|type|description|
 |----|----|----|
 |group_id|VARCHAR(128)|primary key, uuid|
-|guest_type|VARCHAR()|family/other|
-|st_name|VARCHAR(400)|生徒氏名, 姓名間空白なし|
-|st_belong|VARCHAR(400)|生徒所属|
-|st_grade|VARCHAR(400)|生徒学年, `n年`表記|
-|st_class|VARCHAR(400)|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
+|guest_type|VARCHAR(10)|family/other|
+|st_name|VARCHAR(20)|生徒氏名, 姓名間空白なし|
+|st_belong|VARCHAR(30)|生徒所属|
+|st_grade|VARCHAR(10)|生徒学年, `n年`表記|
+|st_class|VARCHAR(10)|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|VARCHAR(20)|not_entered/entered/disable|
 |mail|VARCHAR(400)|メールアドレス|
 
@@ -42,8 +42,8 @@ disableとなったゲストは入場が許可されません。
 ## guest
 |key|type|description|
 |----|----|----|
-|guest_name|VARCHAR|ゲスト名, 姓名間空白なし|
-|relation|VARCHAR()|母/父/兄/弟/姉/妹/{空白}|
+|guest_name|VARCHAR(20)|ゲスト名, 姓名間空白なし|
+|relation|VARCHAR(5)|母/父/兄/弟/姉/妹/{空白}|
 |group_id|VARCHAR(128)|グループID|
 
 ## activity
