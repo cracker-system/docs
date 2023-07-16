@@ -13,18 +13,22 @@ sidebar_position: 2
 |exhibit_id|VARCHAR(20)|所属展示ID|
 |password|VARCHAR(256)|「セキュリティ/パスワード保管」に基づく|
 
-## guest
+## guest-group
 
 |key|type|description|
 |----|----|----|
-|guest_id|VARCHAR(128)|primary key, uuid|
-|guests|longtext|[["続柄","氏名"]]|
+|group_id|VARCHAR(128)|primary key, uuid|
+|guest_type|VARCHAR()|family/other|
 |st_name|VARCHAR(400)|生徒氏名|
 |st_belong|VARCHAR(400)|生徒所属|
 |st_grade|VARCHAR(400)|生徒学年|
 |st_class|VARCHAR(400)|生徒クラス|
 |state|VARCHAR(20)|not_entered/entered/disable|
-|mail|VARCHAR(400)||
+|mail|VARCHAR(400)|メールアドレス|
+
+guest_typeについて
+- family : 生徒の同居家族
+- 家族以外の一般の人
 
 stateについて
 - not_entered : 未入場
@@ -34,6 +38,13 @@ stateについて
 not_entered/enteredの切り替えは文化祭入場口で処理した場合のみ行います。  
 各展示会場での処理では変更しません。  
 disableとなったゲストは入場が許可されません。
+
+## guest
+|key|type|description|
+|----|----|----|
+|guest_name|||
+|relation|||
+|group_id|||
 
 ## activity
 
