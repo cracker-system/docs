@@ -6,17 +6,14 @@ sidebar_position: 7
 新規ゲストの登録を行います。
 
 ## 基本仕様
-- エンドポイント : /guests/{guest_id}
+- エンドポイント : /guests/{group_id}
 - メソッド : POST
 
 ## リクエストヘッダー
 APIキーなどの共通の設定は「Cracker API概要」を参照してください。
 
 ## パスパラメータ
-
-|パラメータ名|タイプ|必須|説明|
-|----|----|----|----|
-|guest_id|文字列|必須|新規登録するゲストのユーザーIDを指定します。|
+なし
 
 ## クエリパラメータ
 なし
@@ -26,9 +23,15 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|必須|説明|
 |----|----|----|----|
 |guests|配列|必須|来場者の続柄と名前を指定します。|
-|student_info|配列|必須|生徒情報を指定します。|
+|guest_type|文字列|必須|family/other|
+|st_name|文字列|`guest_type`がfamilyの場合必須|生徒名|
+|st_belong|文字列|`guest_type`がfamilyの場合必須|生徒所属|
+|st_grade|文字列|`guest_type`がfamilyの場合必須|生徒学年, `n年`表記|
+|st_class|文字列|`guest_type`がfamilyの場合必須|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|文字列|必須|ゲストの入退場状況を指定します。|
 |mail|文字列|必須|ゲストのメールアドレス指定します。|
+
+`guest_tyoe`が`other`の場合、生徒関係の情報は必要ありません。
 
 リクエストボディサンプル
 ```
@@ -43,12 +46,11 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
             "佐藤健一"
         ]
     ],
-    "student_info": [
-        "佐藤花子",
-        "普通科",
-        "3年",
-        "1組"
-    ],
+    "guest_type":"family",
+    "st_name":"佐藤花子",
+    "st_belong":"普通科",
+    "st_grade":"3年",
+    "st_class":"1組",
     "state": "not_entered",
     "mail": "satou@example.com"
 }
@@ -58,33 +60,38 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 
 |パラメータ名|タイプ|説明|
 |----|----|----|
-|guest_id|文字列|ゲストID|
+|group_id|文字列|ゲストID|
 |guests|配列|来場者の続柄と名前|
-|student_info|配列|生徒情報|
+|guest_type|文字列|family/other|
+|st_name|文字列|生徒名|
+|st_belong|文字列|生徒所属|
+|st_grade|文字列|生徒学年, `n年`表記|
+|st_class|文字列|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|文字列|ゲストの入退場状況|
 |mail|文字列|ゲストのメールアドレス|
+
+`guest_type`が`other`の場合、生徒情報は空白でレスポンスされます。
 
 レスポンスボディサンプル
 ```
 {
-    "guest_id": "9d4f400c-8df8-8597-31c5-84df54c27702",
-    "guests": [
-        [
-            "母",
-            "佐藤恵"
-        ],
-        [
-            "兄",
-            "佐藤健一"
-        ]
+  "group_id": "7301af0f-5c10-4a4f-ad84-b2e5727a79df",
+  "guests": [
+    [
+      "母",
+      "佐藤恵"
     ],
-    "student_info": [
-        "佐藤花子",
-        "普通科",
-        "3年",
-        "1組"
-    ],
-    "state": "not_entered",
-    "mail": "satou@example.com"
+    [
+      "兄",
+      "佐藤健一"
+    ]
+  ],
+  "guest_type": "family",
+  "st_name": "佐藤花子",
+  "st_belong": "普通科",
+  "st_grade": "3年",
+  "st_class": "1組",
+  "state": "not_entered",
+  "mail": "satou@example.com"
 }
 ```
