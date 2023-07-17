@@ -22,7 +22,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 
 |パラメータ名|タイプ|必須|説明|
 |----|----|----|----|
-|guest_id|文字列|必須|ゲストID|
+|group_id|文字列|必須|ゲストID|
 |user_id|配列|必須|処理を行ったユーザーID|
 |exhibit_id|文字列|必須|入退場を行った展示ID|
 |activity_type|文字列|必須|enter/exit|
@@ -30,7 +30,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 リクエストボディサンプル
 ```
 {
-    "guest_id": "9a680c1d-a109-93b0-c875-5a99377c75b4",
+    "group_id": "9a680c1d-a109-93b0-c875-5a99377c75b4",
     "user_id": "31ennichi",
     "exhibit_id": "31",
     "activity_type": "enter"
@@ -42,7 +42,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|説明|
 |----|----|----|
 |activity_id|文字列|アクティビティID、自動生成のUUID|
-|guest_id|文字列|ゲストID|
+|group_id|文字列|ゲストID|
 |user_id|配列|処理を行ったユーザーID|
 |exhibit_id|文字列|入退場を行った展示ID|
 |activity_type|文字列|enter/exit|
@@ -57,7 +57,7 @@ activity_typeについて
 [
     {
         "activity_id": "ce6a4d1c-cd6b-1f1e-ac79-71dd423cfd9a",
-        "guest_id": "9a680c1d-a109-93b0-c875-5a99377c75b4",
+        "group_id": "9a680c1d-a109-93b0-c875-5a99377c75b4",
         "user_id": "31ennichi",
         "exhibit_id": "31",
         "activity_type": "enter",
