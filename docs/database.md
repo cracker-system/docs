@@ -97,3 +97,10 @@ authorityについて
 |----|----|----|
 |user_id|VARCHAR(20)||
 |role_id|VARCHAR(128)||
+
+## authorization
+
+|key|type|description|
+|----|----|----|
+|api_key|VARCHAR(40)|API Key 40桁大小英数|
+|host|VARCHAR(40)|ホスト名|
