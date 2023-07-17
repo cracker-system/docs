@@ -34,32 +34,37 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |パラメータ名|タイプ|説明|
 |----|----|----|
 |group_id|文字列|ゲストID|
-|guests|配列|来場者の続き柄と名前|
-|student_info|配列|生徒情報|
-|state|文字列|入退場状況|
-|mail|文字列|登録済みメールアドレス|
+|guests|配列|来場者の続柄と名前|
+|guest_type|文字列|family/other|
+|st_name|文字列|生徒名|
+|st_belong|文字列|生徒所属|
+|st_grade|文字列|生徒学年, `n年`表記|
+|st_class|文字列|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
+|state|文字列|ゲストの入退場状況|
+|mail|文字列|ゲストのメールアドレス|
+
+`guest_type`が`other`の場合、生徒情報は空白でレスポンスされます。
 
 レスポンスボディサンプル
 ```
 {
-    "group_id": "9d4f400c-8df8-8597-31c5-84df54c27702",
-    "guests": [
-        [
-            "母",
-            "佐藤恵"
-        ],
-        [
-            "兄",
-            "佐藤健一"
-        ]
+  "group_id": "7301af0f-5c10-4a4f-ad84-b2e5727a79df",
+  "guests": [
+    [
+      "母",
+      "佐藤恵"
     ],
-    "student_info": [
-        "佐藤花子",
-        "普通科",
-        "3年",
-        "1組"
-    ],
-    "state": "not_entered",
-    "mail": "satou@example.com"
+    [
+      "兄",
+      "佐藤健一"
+    ]
+  ],
+  "guest_type": "family",
+  "st_name": "佐藤花子",
+  "st_belong": "普通科",
+  "st_grade": "3年",
+  "st_class": "1組",
+  "state": "not_entered",
+  "mail": "satou@example.com"
 }
 ```
