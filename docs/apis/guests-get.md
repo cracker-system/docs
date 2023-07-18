@@ -48,15 +48,19 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 レスポンスボディサンプル
 ```
 {
-  "group_id": "7301af0f-5c10-4a4f-ad84-b2e5727a79df",
+  "group_id": "99b0c89c-b00c-48cb-9831-04cf536644bd",
   "guests": [
     [
-      "母",
-      "佐藤恵"
+      "佐藤恵",
+      "母"
     ],
     [
-      "兄",
-      "佐藤健一"
+      "佐藤健一",
+      "兄"
+    ],
+    [
+      "佐藤次郎",
+      "弟"
     ]
   ],
   "guest_type": "family",
@@ -64,7 +68,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
   "st_belong": "普通科",
   "st_grade": "3年",
   "st_class": "1組",
-  "state": "not_entered",
+  "state": "entered",
   "mail": "satou@example.com"
 }
 ```
