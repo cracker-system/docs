@@ -15,7 +15,8 @@ application/json
 UTF-8
 ### 認証
 APIトークン認証を行います。  
-HTTPヘッダーの「Auth-Api-Token」に生成されたAPIトークンを設定してください。
+HTTPヘッダーの「Auth-Api-Key」に生成されたAPIトークンを設定してください。
+
 ### リクエストヘッダー
 REST APIをリクエストする場合、以下のリクエストヘッダーが共通で必要です。
 
