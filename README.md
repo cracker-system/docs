@@ -7,6 +7,9 @@ Crackerの開発者向けドキュメントのリポジトリです。
 
 https://cracker-system.github.io/docs/
 
+### 編集
+ドキュメントの内容を変更する場合はdocsディレクトリ内のmdファイルを変更してください。
+
 ### デプロイ
 GitHub Actionsにより、mainブランチにpushされると自動的にGitHub Pagesにデプロイされます。
 
