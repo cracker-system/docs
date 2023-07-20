@@ -103,4 +103,4 @@ authorityについて
 |key|type|description|
 |----|----|----|
 |api_key|VARCHAR(40)|API Key 40桁大小英数|
-|host|VARCHAR(40)|ホスト名|
+|addr|VARCHAR(40)|IPアドレス|
