@@ -6,7 +6,7 @@ sidebar_position: 7
 新規ゲストの登録を行います。
 
 ## 基本仕様
-- エンドポイント : /guests/{group_id}
+- エンドポイント : /guests
 - メソッド : POST
 
 ## リクエストヘッダー
