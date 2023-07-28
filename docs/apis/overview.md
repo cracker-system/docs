@@ -56,7 +56,7 @@ REST APIを使用する際の各種パラメータやリクエストボディで
 |ゲスト登録|POST|/guests|新規ゲストを登録します|
 |ゲスト更新|PUT|/guests|既存ゲスト情報を更新します|
 |ゲスト削除|DELETE|/guests|既存ゲストを削除します|
-|ゲスト検索|GET|/guests|ゲスト情報を検索します|
+|ゲスト検索|GET|/guests/search|ゲスト情報を検索します|
 |展示取得|GET|/exhibits|展示情報を取得します|
 |展示登録|POST|/exhibits|新規展示を登録します|
 |展示更新|PUT|/exhibits|既存展示情報を更新します|
