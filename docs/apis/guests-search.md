@@ -6,7 +6,7 @@ sidebar_position: 10
 ゲスト情報の検索・取得を行います。
 
 ## 基本仕様
-- エンドポイント : /guests?type={search type}&query={search word}
+- エンドポイント : /guests/search?type={search type}&query={search word}
 - メソッド : GET
 
 ## リクエストヘッダー
