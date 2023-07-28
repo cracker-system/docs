@@ -33,12 +33,16 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |user_id|文字列|ユーザーID|
 |user_name|文字列|ユーザー名|
 |exhibit_id|文字列|ユーザーの所属展示|
+|password|文字列|ユーザーパスワード (特定ユーザーの取得時のみ)|
+
+※パスワードの形式については「セキュリティ」に準拠
 
 レスポンスボディサンプル
 ```
 {
     "user_id": "31ennichi",
     "user_name": "3-1 縁日",
-    "exhibit_id": "31"
+    "exhibit_id": "31",
+    "password": "dc5a4d3d82f7e15792959dc661538ae0e541ce66494516f5c9cfd9cd3308494d"
 }
 ```
