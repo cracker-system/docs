@@ -43,7 +43,7 @@ disableとなったゲストは入場が許可されません。
 |key|type|description|
 |----|----|----|
 |guest_name|VARCHAR(20)|ゲスト名, 姓名間空白なし|
-|relation|VARCHAR(5)|母/父/兄/弟/姉/妹/他|
+|relation|VARCHAR(12)|母/父/兄/弟/姉/妹/他|
 |group_id|VARCHAR(128)|グループID|
 
 ## activity
