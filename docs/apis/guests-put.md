@@ -32,6 +32,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |st_class|文字列|`guest_type`がfamilyの場合必須|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|文字列|必須|ゲストの入退場状況を指定します。|
 |mail|文字列|必須|ゲストのメールアドレス指定します。|
+|parking|数値|必須|駐車券の必要有無 (1:必要, 0:不要)|
 
 `guest_type`が`other`の場合、生徒関係の情報は必要ありません。
 
@@ -57,7 +58,8 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
     "st_grade":"3年",
     "st_class":"1組",
     "state": "entered",
-    "mail": "satou@example.com"
+    "mail": "satou@example.com",
+    "parking": 1
 }
 ```
 
@@ -74,6 +76,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |st_class|文字列|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|文字列|ゲストの入退場状況|
 |mail|文字列|ゲストのメールアドレス|
+|parking|数値|駐車券の必要有無 (1:必要, 0:不要)|
 
 `guest_type`が`other`の場合、生徒情報は空白でレスポンスされます。
 
@@ -101,6 +104,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
   "st_grade": "3年",
   "st_class": "1組",
   "state": "entered",
-  "mail": "satou@example.com"
+  "mail": "satou@example.com",
+  "parking": 1
 }
 ```
