@@ -25,7 +25,7 @@ sidebar_position: 2
 |st_class|VARCHAR(10)|生徒クラス, `n組`表記(クラスなしの場合は`なし`)|
 |state|VARCHAR(20)|not_entered/entered/disable|
 |mail|VARCHAR(400)|メールアドレス|
-|parking|BOOLEAN|駐車券の必要有無 (true:必要, false:不要)|
+|parking|	tinyint(1)|駐車券の必要有無 (1:必要, 0:不要)|
 
 guest_typeについて
 - family : 生徒の同居家族
