@@ -26,6 +26,7 @@ sidebar_position: 2
 |state|VARCHAR(20)|not_entered/entered/disable|
 |mail|VARCHAR(400)|メールアドレス|
 |parking|	tinyint(1)|駐車券の必要有無 (1:必要, 0:不要)|
+|timestamp|timestamp|登録時刻|
 
 guest_typeについて
 - family : 生徒の同居家族
