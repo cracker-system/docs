@@ -72,6 +72,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
 |state|文字列|ゲストの入退場状況|
 |mail|文字列|ゲストのメールアドレス|
 |parking|数値|駐車券の必要有無 (1:必要, 0:不要)|
+|timestamp|タイムスタンプ|登録時刻|
 
 `guest_type`が`other`の場合、生徒情報は空白でレスポンスされます。
 
@@ -96,6 +97,7 @@ APIキーなどの共通の設定は「Cracker API概要」を参照してくだ
   "st_class": "1組",
   "state": "entered",
   "mail": "satou@example.com",
-  "parking": 1
+  "parking": 1,
+  "timestamp": "2024-05-04 14:39:13"
 }
 ```
