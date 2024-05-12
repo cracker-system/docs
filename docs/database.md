@@ -53,7 +53,7 @@ disableとなったゲストは入場が許可されません。
 |key|type|description|
 |----|----|----|
 |activity_id|VARCHAR(128)|primary key, uuid|
-|guest_id|VARCHAR(128)|対象ゲストID|
+|group_id|VARCHAR(128)|対象ゲストID|
 |user_id|VARCHAR(20)|処理を行ったユーザーID|
 |exhibit_id|VARCHAR(20)|処理が行われた展示ID|
 |activity_type|VARCHAR(5)|enter/exit|
